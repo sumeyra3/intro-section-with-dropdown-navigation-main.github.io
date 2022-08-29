@@ -255,7 +255,7 @@ nav{
     list-style: none;
     right: 0;
     padding: 0.7em;
-    width: fit-content;
+    width: 100%;
 }
 
 .mobile-ul li ul li{
