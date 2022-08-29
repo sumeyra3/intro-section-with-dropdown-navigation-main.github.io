@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+.menu {
+    display: none;
+}
+.menu li{
+    position: relative;
+    width: auto;
+    width: 90px;
+    text-align: center;
+    line-height:34px ;
+    margin-right: 1rem;
+}
+.menu li a{
+    display: block;
+    color: hsl(0, 0%, 41%);
+}
+.menu a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.menu li ul {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 5px 5px 2px hsla(0, 0%, 41%, 0.432);
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 98%);
+    top: 100%;
+    right: 0;
+    padding: 0.7em;
+    text-align: left;
+
+}
+#down{
+    display: inline-block;
+}
+#up {
+    display: none;
+}
+.menu li:hover #up{
+    display: inline-block;
+}
+.menu li:hover #down{
+    display: none;
+}
+.menu li ul li a{
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+}
+.menu li ul li{
+    width: max-content;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.buttons{
+    display: none;
+}
+
+.menubar {
+    width:fit-content;
+    border: none;
+    background:none;
+}
+
+nav .menubar {
+    width: 30px;
+    height: 30px;
+}
+nav{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img2{
+    display: none;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+.info{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info h1 {
+    padding-top: 0.5em;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 0.2em;
+    color: hsl(0, 0%, 8%);
+}
+.info p {
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    padding-bottom: 2em;
+}
+
+.learn{
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    padding: 0.7em 1em;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.learn:hover{
+    background-color: white;
+    color: hsl(0, 0%, 8%);
+}
+.deneme{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    padding-top: 2em;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 700px) {
+    .menu {
+        display: flex;
+        list-style: none;
+        justify-content: flex-start;
+        
+    }
+    .menu li{
+        display: inline-block;
+        padding: 0.2em;
+    }
+    .menu a{
+        text-decoration: none;
+    }
+    nav{
+        display: flex;
+        align-content: cen;
+    }
+    .logo{
+        
+        margin-right: 3rem;
+    }
+    .buttons {
+        display: flex;
+        gap: 10%;
+    }
+    .register{
+        background: none;
+        padding: 0.7em;
+        border-radius: 10px;
+        border: 1px solid;
+    }
+    .login {
+        padding: 0.7em;
+        background: none;
+        border: none;
+    }
+    .login:hover{
+        background-color:hsla(0, 0%, 41%, 0.527);
+        border-radius: 10px;
+    }
+    .register:hover{
+        background-color:hsla(0, 0%, 41%, 0.527);
+        border: none;
+    }
+    .menubar{
+        display: none;
+    }
+    .ana {
+        gap: 10%;
+        height: 80%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 6em;
+    }
+    .img2 {
+        display: flex
+    }
+    .img1{
+        display: none;
+    }
+    .info  {
+        text-align: left;
+    }
+    .info h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .ana{
+        width: 1100px;
+    }
+}
+
+.mobile-nav{
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.mobile-ul{
+    list-style: none;
+    padding-top: 1em;
+}
+.mobile-ul li{
+    width: 100%;
+    text-align: left;
+    line-height:34px ;
+    margin-right: 1rem;
+}
+
+.mobile-ul a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+
+
+.mobile-ul li ul {
+    display: none;
+    list-style: none;
+    right: 0;
+    padding: 0.7em;
+    width: 50%;
+}
+
+.mobile-ul li ul li{
+    padding-left: 2em;
+    text-align: left;
+}
+.mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    
+}
+.mobile-buttons .login {
+    background:none;
+    border: none;
+    padding: 1em 2em;
+    color: hsl(0, 0%, 41%);
+}
+.mobile-buttons .register {
+    background:none;
+    border: 1px solid  hsl(0, 0%, 41%);;
+    border-radius: 16px;
+    padding: 1em 2em;
+    color: hsl(0, 0%, 41%);
+}
+.mobile-ul a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.close{
+    background:none;
+    width: fit-content;
+    position: relative;
+    right: -95%;
+    border: none;
+   
+}
+#down{
+    display: inline-block;
+}
+#up{
+    display: none;
+}
